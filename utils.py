@@ -1,7 +1,10 @@
 # utils.py
 COURSE_COLORS = [
-    '#E8F4F8', '#F0E8F8', '#F8F0E8', '#E8F8E8',
-    '#F8E8E8', '#F8F8E8', '#E8F8F0', '#F8E8F0',
+    '#FF6666',  # red row
+    '#00FF00',  # bright green row
+    '#FF9900',  # orange row
+    '#FFFF33',  # yellow row
+    '#0000FF',  # blue row
 ]
 
 class ExitToMenu(Exception):
