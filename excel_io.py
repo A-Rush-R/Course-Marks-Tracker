@@ -59,14 +59,27 @@ def create_excel(courses, filename):
 
     # --- Formats ---
     header_fmt = workbook.add_format({
-        'bold': True, 'align': 'center', 'valign': 'vcenter',
-        'bg_color': '#1e768f', 'font_color': 'white', 'border': 1
+        'bold': True,
+        'align': 'center',
+        'valign': 'vcenter',
+        'bg_color': '#F4C842',  # gold-like
+        'font_color': 'black',
+        'border': 1
     })
+    
     sub_header_fmt = workbook.add_format({
-        'bold': True, 'align': 'center',
-        'bg_color': '#2a9cb8', 'font_color': 'white', 'border': 1
+        'bold': True,
+        'align': 'center',
+        'bg_color': '#FFD966',  # lighter gold
+        'font_color': 'black',
+        'border': 1
     })
-    hidden_fmt = workbook.add_format({'bg_color': '000000', 'font_color': '000000', 'border': 1})
+
+    hidden_fmt = workbook.add_format({
+        'bg_color': '#000000',
+        'font_color': '#000000',
+        'border': 1
+    })
     spi_fmt = workbook.add_format({
         'bold': True, 'align': 'left', 'border': 1, 'bg_color': '#D3D3D3'
     })
